@@ -1,0 +1,6 @@
+[96m[LL][0m Building LLVM test binary...
+sqasm_turbo.ll:42:34: error: floating point constant invalid for type
+   42 | @SQ_INV_SQRT256 = constant float 0x3F100000            ; 1/√256 = 0.0625
+      |                                  ^
+1 error generated.
+make: *** [Makefile:101: turbo_test] Error 1
