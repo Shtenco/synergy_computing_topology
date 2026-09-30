@@ -1,0 +1,279 @@
+/mnt/data/shtenco_vs_linux_full.c: In function 'test_A':
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:201:19: note: in expansion of macro 'KTIME'
+  201 |     uint64_t t0 = KTIME();
+      |                   ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:204:32: note: in expansion of macro 'KTIME'
+  204 |     double linux_ns = (double)(KTIME()-t0) / NA;
+      |                                ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:207:10: note: in expansion of macro 'KTIME'
+  207 |     t0 = KTIME();
+      |          ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:210:34: note: in expansion of macro 'KTIME'
+  210 |     double shtenco_ns = (double)(KTIME()-t0) / NA;
+      |                                  ^~~~~
+/mnt/data/shtenco_vs_linux_full.c: In function 'test_B':
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:227:19: note: in expansion of macro 'KTIME'
+  227 |     uint64_t t0 = KTIME();
+      |                   ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:229:32: note: in expansion of macro 'KTIME'
+  229 |     double linux_ns = (double)(KTIME()-t0) / NH;
+      |                                ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:232:10: note: in expansion of macro 'KTIME'
+  232 |     t0 = KTIME();
+      |          ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:234:34: note: in expansion of macro 'KTIME'
+  234 |     double shtenco_ns = (double)(KTIME()-t0) / NH;
+      |                                  ^~~~~
+/mnt/data/shtenco_vs_linux_full.c: In function 'test_C':
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:256:19: note: in expansion of macro 'KTIME'
+  256 |     uint64_t t0 = KTIME();
+      |                   ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:258:32: note: in expansion of macro 'KTIME'
+  258 |     double linux_ns = (double)(KTIME()-t0) / NP;
+      |                                ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:261:10: note: in expansion of macro 'KTIME'
+  261 |     t0 = KTIME();
+      |          ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:266:34: note: in expansion of macro 'KTIME'
+  266 |     double shtenco_ns = (double)(KTIME()-t0) / NP;
+      |                                  ^~~~~
+/mnt/data/shtenco_vs_linux_full.c: In function 'test_D':
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:298:19: note: in expansion of macro 'KTIME'
+  298 |     uint64_t t0 = KTIME();
+      |                   ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:310:32: note: in expansion of macro 'KTIME'
+  310 |     double linux_ns = (double)(KTIME()-t0) / ND / NBLOCKS;
+      |                                ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:313:10: note: in expansion of macro 'KTIME'
+  313 |     t0 = KTIME();
+      |          ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:320:34: note: in expansion of macro 'KTIME'
+  320 |     double shtenco_ns = (double)(KTIME()-t0) / ND / NBLOCKS;
+      |                                  ^~~~~
+/mnt/data/shtenco_vs_linux_full.c: In function 'test_E':
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:350:19: note: in expansion of macro 'KTIME'
+  350 |     uint64_t t0 = KTIME();
+      |                   ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:352:32: note: in expansion of macro 'KTIME'
+  352 |     double linux_ns = (double)(KTIME()-t0) / REPS;
+      |                                ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:356:10: note: in expansion of macro 'KTIME'
+  356 |     t0 = KTIME();
+      |          ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:360:39: note: in expansion of macro 'KTIME'
+  360 |     double shtenco_ns_lzma = (double)(KTIME()-t0) / REPS;
+      |                                       ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:364:10: note: in expansion of macro 'KTIME'
+  364 |     t0 = KTIME();
+      |          ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:368:37: note: in expansion of macro 'KTIME'
+  368 |     double shtenco_ns_gz = (double)(KTIME()-t0) / REPS;
+      |                                     ^~~~~
+/mnt/data/shtenco_vs_linux_full.c: In function 'test_F':
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:394:19: note: in expansion of macro 'KTIME'
+  394 |     uint64_t t0 = KTIME();
+      |                   ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:396:32: note: in expansion of macro 'KTIME'
+  396 |     double linux_ns = (double)(KTIME()-t0) / NF;
+      |                                ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:399:10: note: in expansion of macro 'KTIME'
+  399 |     t0 = KTIME();
+      |          ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:401:34: note: in expansion of macro 'KTIME'
+  401 |     double shtenco_ns = (double)(KTIME()-t0) / NF;
+      |                                  ^~~~~
+/mnt/data/shtenco_vs_linux_full.c: In function 'test_G':
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:434:19: note: in expansion of macro 'KTIME'
+  434 |     uint64_t t0 = KTIME();
+      |                   ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:442:32: note: in expansion of macro 'KTIME'
+  442 |     double linux_ns = (double)(KTIME()-t0) / NG;
+      |                                ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:445:10: note: in expansion of macro 'KTIME'
+  445 |     t0 = KTIME();
+      |          ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:450:34: note: in expansion of macro 'KTIME'
+  450 |     double shtenco_ns = (double)(KTIME()-t0) / NG;
+      |                                  ^~~~~
+/mnt/data/shtenco_vs_linux_full.c: In function 'test_H':
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:497:19: note: in expansion of macro 'KTIME'
+  497 |     uint64_t t0 = KTIME();
+      |                   ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:500:32: note: in expansion of macro 'KTIME'
+  500 |     double linux_ns = (double)(KTIME()-t0) / NH_OPS;
+      |                                ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:504:10: note: in expansion of macro 'KTIME'
+  504 |     t0 = KTIME();
+      |          ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:507:34: note: in expansion of macro 'KTIME'
+  507 |     double shtenco_ns = (double)(KTIME()-t0) / NH_OPS;
+      |                                  ^~~~~
+/mnt/data/shtenco_vs_linux_full.c: In function 'test_I':
+/mnt/data/shtenco_vs_linux_full.c:527:53: warning: operation on 'p' may be undefined [-Wsequence-point]
+  527 |         int l = snprintf(tmp, 128, tpl, (unsigned)(p++),
+      |                                                   ~~^~~
+/mnt/data/shtenco_vs_linux_full.c:527:53: warning: operation on 'p' may be undefined [-Wsequence-point]
+/mnt/data/shtenco_vs_linux_full.c:527:53: warning: operation on 'p' may be undefined [-Wsequence-point]
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:535:19: note: in expansion of macro 'KTIME'
+  535 |     uint64_t t0 = KTIME();
+      |                   ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:539:32: note: in expansion of macro 'KTIME'
+  539 |     double linux_ns = (double)(KTIME()-t0) / REPS;
+      |                                ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:543:10: note: in expansion of macro 'KTIME'
+  543 |     t0 = KTIME();
+      |          ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:547:31: note: in expansion of macro 'KTIME'
+  547 |     double lzma_ns = (double)(KTIME()-t0) / REPS;
+      |                               ^~~~~
+/mnt/data/shtenco_vs_linux_full.c: In function 'test_J':
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:576:19: note: in expansion of macro 'KTIME'
+  576 |     uint64_t t0 = KTIME();
+      |                   ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:578:32: note: in expansion of macro 'KTIME'
+  578 |     double linux_ns = (double)(KTIME()-t0) / NZ;
+      |                                ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:581:10: note: in expansion of macro 'KTIME'
+  581 |     t0 = KTIME();
+      |          ^~~~~
+/mnt/data/shtenco_vs_linux_full.c:38:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   38 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/shtenco_vs_linux_full.c:586:34: note: in expansion of macro 'KTIME'
+  586 |     double shtenco_ns = (double)(KTIME()-t0) / NZ;
+      |                                  ^~~~~
+/mnt/data/shtenco_vs_linux_full.c: In function 'lzma_c':
+/mnt/data/shtenco_vs_linux_full.c:149:5: warning: ignoring return value of 'lzma_easy_encoder' declared with attribute 'warn_unused_result' [-Wunused-result]
+  149 |     lzma_easy_encoder(&s, 6, LZMA_CHECK_CRC64);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/data/shtenco_vs_linux_full.c:152:5: warning: ignoring return value of 'lzma_code' declared with attribute 'warn_unused_result' [-Wunused-result]
+  152 |     lzma_code(&s, LZMA_FINISH);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In function 'push',
+    inlined from 'test_H' at /mnt/data/shtenco_vs_linux_full.c:511:5:
+/mnt/data/shtenco_vs_linux_full.c:186:5: warning: 'strncpy' output truncated copying 47 bytes from a string of length 48 [-Wstringop-truncation]
+  186 |     strncpy(r->name, name, 47); r->name[47] = 0;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
