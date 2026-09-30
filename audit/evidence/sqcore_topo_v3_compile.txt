@@ -1,0 +1,131 @@
+/mnt/data/sqcore_topo_v3.c: In function 'sq_topo_bench':
+/mnt/data/sqcore_topo_v3.c:92:24: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   92 | #define KTIME_GET()    ({ struct timespec _ts; clock_gettime(CLOCK_MONOTONIC,&_ts); (ktime_t)(_ts.tv_sec*1000000000LL+_ts.tv_nsec); })
+      |                        ^
+/mnt/data/sqcore_topo_v3.c:890:10: note: in expansion of macro 'KTIME_GET'
+  890 |     t0 = KTIME_GET();
+      |          ^~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:92:24: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   92 | #define KTIME_GET()    ({ struct timespec _ts; clock_gettime(CLOCK_MONOTONIC,&_ts); (ktime_t)(_ts.tv_sec*1000000000LL+_ts.tv_nsec); })
+      |                        ^
+/mnt/data/sqcore_topo_v3.c:892:10: note: in expansion of macro 'KTIME_GET'
+  892 |     t1 = KTIME_GET();
+      |          ^~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:92:24: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   92 | #define KTIME_GET()    ({ struct timespec _ts; clock_gettime(CLOCK_MONOTONIC,&_ts); (ktime_t)(_ts.tv_sec*1000000000LL+_ts.tv_nsec); })
+      |                        ^
+/mnt/data/sqcore_topo_v3.c:896:10: note: in expansion of macro 'KTIME_GET'
+  896 |     t0 = KTIME_GET();
+      |          ^~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:92:24: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   92 | #define KTIME_GET()    ({ struct timespec _ts; clock_gettime(CLOCK_MONOTONIC,&_ts); (ktime_t)(_ts.tv_sec*1000000000LL+_ts.tv_nsec); })
+      |                        ^
+/mnt/data/sqcore_topo_v3.c:902:10: note: in expansion of macro 'KTIME_GET'
+  902 |     t1 = KTIME_GET();
+      |          ^~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:92:24: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   92 | #define KTIME_GET()    ({ struct timespec _ts; clock_gettime(CLOCK_MONOTONIC,&_ts); (ktime_t)(_ts.tv_sec*1000000000LL+_ts.tv_nsec); })
+      |                        ^
+/mnt/data/sqcore_topo_v3.c:907:10: note: in expansion of macro 'KTIME_GET'
+  907 |     t0 = KTIME_GET();
+      |          ^~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:92:24: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   92 | #define KTIME_GET()    ({ struct timespec _ts; clock_gettime(CLOCK_MONOTONIC,&_ts); (ktime_t)(_ts.tv_sec*1000000000LL+_ts.tv_nsec); })
+      |                        ^
+/mnt/data/sqcore_topo_v3.c:909:10: note: in expansion of macro 'KTIME_GET'
+  909 |     t1 = KTIME_GET();
+      |          ^~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:92:24: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   92 | #define KTIME_GET()    ({ struct timespec _ts; clock_gettime(CLOCK_MONOTONIC,&_ts); (ktime_t)(_ts.tv_sec*1000000000LL+_ts.tv_nsec); })
+      |                        ^
+/mnt/data/sqcore_topo_v3.c:921:14: note: in expansion of macro 'KTIME_GET'
+  921 |         t0 = KTIME_GET();
+      |              ^~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:92:24: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   92 | #define KTIME_GET()    ({ struct timespec _ts; clock_gettime(CLOCK_MONOTONIC,&_ts); (ktime_t)(_ts.tv_sec*1000000000LL+_ts.tv_nsec); })
+      |                        ^
+/mnt/data/sqcore_topo_v3.c:928:14: note: in expansion of macro 'KTIME_GET'
+  928 |         t1 = KTIME_GET();
+      |              ^~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:92:24: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   92 | #define KTIME_GET()    ({ struct timespec _ts; clock_gettime(CLOCK_MONOTONIC,&_ts); (ktime_t)(_ts.tv_sec*1000000000LL+_ts.tv_nsec); })
+      |                        ^
+/mnt/data/sqcore_topo_v3.c:943:14: note: in expansion of macro 'KTIME_GET'
+  943 |         t0 = KTIME_GET();
+      |              ^~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:92:24: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   92 | #define KTIME_GET()    ({ struct timespec _ts; clock_gettime(CLOCK_MONOTONIC,&_ts); (ktime_t)(_ts.tv_sec*1000000000LL+_ts.tv_nsec); })
+      |                        ^
+/mnt/data/sqcore_topo_v3.c:949:14: note: in expansion of macro 'KTIME_GET'
+  949 |         t1 = KTIME_GET();
+      |              ^~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:92:24: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   92 | #define KTIME_GET()    ({ struct timespec _ts; clock_gettime(CLOCK_MONOTONIC,&_ts); (ktime_t)(_ts.tv_sec*1000000000LL+_ts.tv_nsec); })
+      |                        ^
+/mnt/data/sqcore_topo_v3.c:955:10: note: in expansion of macro 'KTIME_GET'
+  955 |     t0 = KTIME_GET();
+      |          ^~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:92:24: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   92 | #define KTIME_GET()    ({ struct timespec _ts; clock_gettime(CLOCK_MONOTONIC,&_ts); (ktime_t)(_ts.tv_sec*1000000000LL+_ts.tv_nsec); })
+      |                        ^
+/mnt/data/sqcore_topo_v3.c:957:10: note: in expansion of macro 'KTIME_GET'
+  957 |     t1 = KTIME_GET();
+      |          ^~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:92:24: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   92 | #define KTIME_GET()    ({ struct timespec _ts; clock_gettime(CLOCK_MONOTONIC,&_ts); (ktime_t)(_ts.tv_sec*1000000000LL+_ts.tv_nsec); })
+      |                        ^
+/mnt/data/sqcore_topo_v3.c:961:10: note: in expansion of macro 'KTIME_GET'
+  961 |     t0 = KTIME_GET();
+      |          ^~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:92:24: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   92 | #define KTIME_GET()    ({ struct timespec _ts; clock_gettime(CLOCK_MONOTONIC,&_ts); (ktime_t)(_ts.tv_sec*1000000000LL+_ts.tv_nsec); })
+      |                        ^
+/mnt/data/sqcore_topo_v3.c:963:10: note: in expansion of macro 'KTIME_GET'
+  963 |     t1 = KTIME_GET();
+      |          ^~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:92:24: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   92 | #define KTIME_GET()    ({ struct timespec _ts; clock_gettime(CLOCK_MONOTONIC,&_ts); (ktime_t)(_ts.tv_sec*1000000000LL+_ts.tv_nsec); })
+      |                        ^
+/mnt/data/sqcore_topo_v3.c:978:14: note: in expansion of macro 'KTIME_GET'
+  978 |         t0 = KTIME_GET();
+      |              ^~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:92:24: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   92 | #define KTIME_GET()    ({ struct timespec _ts; clock_gettime(CLOCK_MONOTONIC,&_ts); (ktime_t)(_ts.tv_sec*1000000000LL+_ts.tv_nsec); })
+      |                        ^
+/mnt/data/sqcore_topo_v3.c:981:14: note: in expansion of macro 'KTIME_GET'
+  981 |         t1 = KTIME_GET();
+      |              ^~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:92:24: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   92 | #define KTIME_GET()    ({ struct timespec _ts; clock_gettime(CLOCK_MONOTONIC,&_ts); (ktime_t)(_ts.tv_sec*1000000000LL+_ts.tv_nsec); })
+      |                        ^
+/mnt/data/sqcore_topo_v3.c:989:14: note: in expansion of macro 'KTIME_GET'
+  989 |         t0 = KTIME_GET();
+      |              ^~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:92:24: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   92 | #define KTIME_GET()    ({ struct timespec _ts; clock_gettime(CLOCK_MONOTONIC,&_ts); (ktime_t)(_ts.tv_sec*1000000000LL+_ts.tv_nsec); })
+      |                        ^
+/mnt/data/sqcore_topo_v3.c:994:14: note: in expansion of macro 'KTIME_GET'
+  994 |         t1 = KTIME_GET();
+      |              ^~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:973:22: warning: unused variable 'block_id' [-Wunused-variable]
+  973 |         u32 pool_id, block_id;
+      |                      ^~~~~~~~
+/mnt/data/sqcore_topo_v3.c:973:13: warning: unused variable 'pool_id' [-Wunused-variable]
+  973 |         u32 pool_id, block_id;
+      |             ^~~~~~~
+/mnt/data/sqcore_topo_v3.c: At top level:
+/mnt/data/sqcore_topo_v3.c:572:13: warning: 'sq_simplex_auto_learn' defined but not used [-Wunused-function]
+  572 | static void sq_simplex_auto_learn(void)
+      |             ^~~~~~~~~~~~~~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:315:13: warning: 'hilbert_d2xy' defined but not used [-Wunused-function]
+  315 | static void hilbert_d2xy(u32 n, u32 d, u32 *x, u32 *y)
+      |             ^~~~~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:278:23: warning: 'sq_pools_lock' defined but not used [-Wunused-variable]
+  278 | static rwlock_t       sq_pools_lock;
+      |                       ^~~~~~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:274:19: warning: 'sq_simplex_lock' defined but not used [-Wunused-variable]
+  274 | static rwlock_t   sq_simplex_lock;
+      |                   ^~~~~~~~~~~~~~~
+/mnt/data/sqcore_topo_v3.c:265:23: warning: 'sq_torus_lock' defined but not used [-Wunused-variable]
+  265 | static rwlock_t       sq_torus_lock;
+      |                       ^~~~~~~~~~~~~
