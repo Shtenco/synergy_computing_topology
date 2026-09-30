@@ -1,0 +1,48 @@
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║  SHTENCO TURBO OS vs STANDARD LINUX — ПОЛНЫЙ ТЕСТ                     ║
+║  10 типичных операций ПК · Евгений Коштенко / Костанай / 2026          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+A. Аллокация памяти...
+   malloc: 133.7 ns  arena: 21.9 ns  frag_arena=0%  frag_malloc~15%
+B. Хэш/дедупликация...
+   crc32: 208.0 ns  xxhash64: 135.7 ns  acc=11493024658632982512
+C. Страницы памяти (zram-style compression)...
+   memcpy: 0.4 ns  RLE2: 4734.1 ns  compressed 4096→808 (5.1x)
+D. Поиск в буфере данных...
+   full_scan: 413.6 ns/blk  HomDesc: 0.77 ns/blk  hits=28  acc=7096000
+E. Файловый I/O...
+   raw copy: 3160 MB/s  gzip: 60 MB/s×66.5x  lzma: 7 MB/s×84.2x
+   LZMA effective bandwidth: 607 MB/s (с учётом сжатия 84.2x)
+F. Сетевой checksum...
+   crc32: 1044.1 ns/pkt  xxhash64: 943.6 ns/pkt  acc=3816353373075473248
+G. Поиск ключа (qsort+bsearch vs Hilbert-indexed)...
+   linear scan: 117.8 ns  Hilbert O(1): 50.0 ns  acc=655226674
+H. Многопоточность (4 потоков)...
+   mutex: 56.8 ns/op  rwlock(99%read): 255.4 ns/op
+I. Сжатие системного лога...
+   gzip: 90 MB/s×14.7x  lzma: 2 MB/s×670.9x
+J. zram-style page compression...
+   page copy: 0.7 ns  RLE2 zram: 3043.5 ns  ratio=31.5x
+   RAM savings: 31.5x меньше физической памяти
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║  ИТОГОВАЯ ТАБЛИЦА                                                      ║
+╠══════════════════════════════════════════════════════════════════════════╣
+║  ОПЕРАЦИЯ                           │    Linux │  SHTENCO │ Speedup ║
+╠══════════════════════════════════════════════════════════════════════════╣
+║  Аллокация 256B (alloc+free)       │  133.7ns │   21.9ns │  6.1xWIN ║
+║  Хэш 256B (crc32 vs xxhash64)            │  208.0ns │  135.7ns │  1.5x+ ║
+║  Страница 4KB (memcpy vs RLE2)      │    0.4ns │      5us │  0.0x≈ ║
+║  Поиск dominant byte (scan vs HomDesc) │  413.6ns │    0.8ns │ 535.7xWIN ║
+║  Файловый I/O 8MB (copy vs LZMA ratio) │      3us │  606.6ns │  5.2xWIN ║
+║  Сетевой hash 1500B (crc32 vs xxhash64) │      1us │  943.6ns │  1.1x+ ║
+║  Поиск ключа (linear vs Hilbert O(1)) │  117.8ns │   50.0ns │  2.4xWIN ║
+║  Многопоточность (mutex vs rwlock │   56.8ns │  255.4ns │  0.2x≈ ║
+║  Лог 4MB gzip: eff MB/s                  │      1us │      1us │  0.9x≈ ║
+║  zram 4KB page (ratio bandwidth)            │   22.9ns │      3us │  0.0x≈ ║
+╠══════════════════════════════════════════════════════════════════════════╣
+║  GEOMETRIC MEAN                             │    Linux │  SHTENCO │  3.3x  ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
