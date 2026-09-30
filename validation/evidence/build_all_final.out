@@ -1,0 +1,11 @@
+python3 -m py_compile TURBO_HPC_SHTENCO_OS_v4.py turbo_cache_accelerator_v2.py DEEPCOMPRESS_TOPO_v10_V4.py
+TERM=xterm make -C /usr/src/linux-headers-6.12.96+deb13-amd64 M=/mnt/data/shtenco_v4_work/v4src/.kbuild modules
+make[1]: Entering directory '/usr/src/linux-headers-6.12.96+deb13-amd64'
+  CC [M]  /mnt/data/shtenco_v4_work/v4src/.kbuild/sqcore_turbo_v4.o
+  MODPOST /mnt/data/shtenco_v4_work/v4src/.kbuild/Module.symvers
+  CC [M]  /mnt/data/shtenco_v4_work/v4src/.kbuild/sqcore_turbo_v4.mod.o
+  CC [M]  /mnt/data/shtenco_v4_work/v4src/.kbuild/.module-common.o
+  LD [M]  /mnt/data/shtenco_v4_work/v4src/.kbuild/sqcore_turbo_v4.ko
+  BTF [M] /mnt/data/shtenco_v4_work/v4src/.kbuild/sqcore_turbo_v4.ko
+make[1]: Leaving directory '/usr/src/linux-headers-6.12.96+deb13-amd64'
+cp .kbuild/sqcore_turbo_v4.ko ./sqcore_turbo_v4.ko
