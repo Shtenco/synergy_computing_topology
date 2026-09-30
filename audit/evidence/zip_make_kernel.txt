@@ -1,0 +1,4 @@
+[96m[KO][0m Building sqcore_turbo.ko...
+[91mERROR: kernel headers not found at /lib/modules/6.18.44/build[0m
+  Install: sudo apt install linux-headers-6.18.44
+make: *** [Makefile:66: kernel] Error 1
