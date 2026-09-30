@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.nbc
+*.nbi
+*.o
+*.mod
+*.mod.c
+*.mod.o
+*.cmd
+Module.symvers
+modules.order
+.kbuild/
+*.log
+*.tmp
+.DS_Store
