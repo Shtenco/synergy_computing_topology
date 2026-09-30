@@ -1,0 +1,18 @@
+SHTENCO V4 FAIR BENCHMARK
+BUILD sorted=0.829ms hilbert=1.496ms hash=0.512ms btree=1.619ms
+LOOKUP FLAT         11830.16 ns/query checksum=118259558287
+LOOKUP HASH            48.26 ns/query checksum=118259558287
+LOOKUP SORTED         149.38 ns/query checksum=118259558287
+LOOKUP B-TREE         145.28 ns/query checksum=118259558287
+LOOKUP HILBERT        218.43 ns/query checksum=118259558287
+LOOKUP_RESULT_EQUAL=PASS
+QUERY_RESULT_SET_256=PASS total_hits=16324 checksum=5483934424554476
+EMPTY_QUERY_GUARD=PASS (speedup suppressed)
+AMORT_VARIED reps=1 build_ms=1.661605 raw_ms=1.026783 idx_query_ms=0.001170 e2e_idx_ms=1.662775 speedup=0.618x
+AMORT_VARIED reps=2 build_ms=1.661605 raw_ms=3.255701 idx_query_ms=0.001617 e2e_idx_ms=1.663222 speedup=1.957x
+AMORT_VARIED reps=5 build_ms=1.661605 raw_ms=5.827038 idx_query_ms=0.002282 e2e_idx_ms=1.663887 speedup=3.502x
+AMORT_VARIED reps=10 build_ms=1.661605 raw_ms=11.433799 idx_query_ms=0.004266 e2e_idx_ms=1.665871 speedup=6.864x
+AMORT_VARIED reps=20 build_ms=1.661605 raw_ms=24.389505 idx_query_ms=0.007303 e2e_idx_ms=1.668908 speedup=14.614x
+AMORT_VARIED reps=30 build_ms=1.661605 raw_ms=35.543602 idx_query_ms=0.011208 e2e_idx_ms=1.672813 speedup=21.248x
+END_TO_END_VARIED_SPEEDUP_SAN30Q=21.248x sink=2845993567099132
+INDEX_BUILD_COST_INCLUDED=PASS
