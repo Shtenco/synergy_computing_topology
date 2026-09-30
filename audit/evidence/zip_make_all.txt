@@ -1,0 +1,24 @@
+[96m[CC][0m Building C client + demo...
+gcc -O3 -march=native -ffast-math -Wall -Wextra -DSQCORE_MAIN -o sqcore_demo sqcore_client_turbo.c -lm
+[92m[CC] sqcore_demo built[0m
+[96m[LL][0m Compiling LLVM IR → native...
+clang: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]
+sqasm_turbo.ll:42:34: error: floating point constant invalid for type
+   42 | @SQ_INV_SQRT256 = constant float 0x3F100000            ; 1/√256 = 0.0625
+      |                                  ^
+1 error generated.
+[91m[LL] Compile failed — check LLVM install[0m
+[92m[LL] sqasm_turbo.o compiled[0m
+
+[92m══════════════════════════════════════════════════════[0m
+[92m  TURBO HPC v2.0 — BUILD COMPLETE[0m
+  sqcore_client_turbo  (C client + demo)
+  sqasm_turbo.o        (LLVM IR compiled)
+  turbo_test           (LLVM standalone)
+[92m══════════════════════════════════════════════════════[0m
+
+  Run demo:   ./sqcore_demo
+  Run bench:  ./sqcore_demo --bench 50000
+  LLVM test:  ./turbo_test
+
+  Kernel module: [33mmake kernel[0m  (requires kernel-headers)
