@@ -1,0 +1,6 @@
+=== v1 ===
+norms 1.0 1.0 1.0 imag_after_hadamard_max 0.0
+same_engine_roundtrip True fresh_engine_roundtrip False fresh_len 0 compressed_len 53
+=== v2 ===
+norms 1.0 1.0 1.0 imag_after_hadamard_max 0.0
+same_engine_roundtrip True fresh_engine_roundtrip False fresh_len 0 compressed_len 54
