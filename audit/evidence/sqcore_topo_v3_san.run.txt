@@ -1,0 +1,60 @@
+
+╔══════════════════════════════════════════════════════════════╗
+║     SQCORE TOPOLOGICAL KERNEL v3.0 — BENCHMARK              ║
+║     5-Level Topological RAM  vs  Kernel v2 Baseline         ║
+╚══════════════════════════════════════════════════════════════╝
+
+[sqtopo] TOPOLOGICAL KERNEL v3.0 initialized
+[sqtopo]   L0: Hilbert curve (order=8, space=256x256)
+[sqtopo]   L1: Torus-VRAM T² (256x256 = 65536 slots)
+[sqtopo]   L2: Simplex prefetcher (max=4096 simplices)
+[sqtopo]   L3: Homology compress (8 β-components)
+[sqtopo]   L4: Retract arena (8 pools x 1MB)
+┌─ L0 HILBERT CURVE + L1 TORUS-VRAM ─────────────────────────┐
+│  v2 VSET (flat xxhash slot)  :     15 ns/op              │
+│  v3 TSET (Hilbert+Torus)     :    515 ns/op              │
+│  v2 VGET                     :     15 ns/op              │
+│  v3 TGET                     :    264 ns/op              │
+│  TSET speedup                :    0.0x                    │
+│  Torus hit rate              :    100 %                    │
+└─────────────────────────────────────────────────────────────┘
+
+┌─ L2 SIMPLEX PREFETCHER ─────────────────────────────────────┐
+│  Simplex predict latency     :    387 ns/op              │
+│  Registered simplices        :    200                       │
+│  Prefetch predictions        :   2000                     │
+└─────────────────────────────────────────────────────────────┘
+
+┌─ L3 HOMOLOGY COMPRESS ──────────────────────────────────────┐
+│  PSI → β-descriptor          : 109598 ns/op              │
+│  β-descriptor → PSI (approx) :  11472 ns/op              │
+│  Compression ratio           :    128x                     │
+│  Descriptor size             :     16 bytes               │
+│  Original PSI size           :   2048 bytes               │
+└─────────────────────────────────────────────────────────────┘
+
+┌─ L4 RETRACT ARENA vs vmalloc ──────────────────────────────┐
+│  v2 malloc/free              :    775 ns/op              │
+│  v3 retract alloc            :     37 ns/op              │
+│  Alloc speedup               :   20.9x                    │
+│  Fragmentation               :      0 % (always 0)         │
+└─────────────────────────────────────────────────────────────┘
+
+┌─ QUANTUM PIPELINE ─────────────────────────────────────────┐
+│  QPIPE latency               :  26141 ns/op              │
+└─────────────────────────────────────────────────────────────┘
+
+╔═══════════════════════════════════════════════════════════════╗
+║  ИТОГОВЫЕ SPEEDUP'Ы                                          ║
+╠═══════════════════════════════════════════════════════════════╣
+║  L0+L1 Hilbert+Torus TSET    :    0.0x                      ║
+║  L1    Torus hit rate boost  :   21.5x                      ║
+║  L2    Simplex prefetch      :   10.0x (cold miss → 0)      ║
+║  L3    Homology compress     :    128x                      ║
+║  L4    Retract vs malloc     :   20.9x                      ║
+╠═══════════════════════════════════════════════════════════════╣
+║  Геометрическое среднее      :    7.0x                      ║
+║  Общий потенциал (×L0..L4)   :  16789x                     ║
+╚═══════════════════════════════════════════════════════════════╝
+
+[sqtopo] TOPOLOGICAL KERNEL v3.0 unloaded
