@@ -1,0 +1,27 @@
+=== SYSTEM ===
+Linux 13df96ee2bf3 6.18.44 #1 SMP Sat Sep 26 20:02:31 UTC 2026 x86_64 GNU/Linux
+
+gcc (Debian 14.2.0-19) 14.2.0
+clang version 17.0.0 (https://github.com/swiftlang/llvm-project.git 10999b6d034fe318f3d56c83bddb6572593a8bb0)
+Python 3.13.5
+
+=== ZIP ===
+Archive:  /mnt/data/TURBO_HPC_v2.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+        0  2026-03-09 14:35   TURBO_HPC_v2/
+    26885  2026-03-09 14:34   TURBO_HPC_v2/sqcore_client_turbo.c
+    33976  2026-03-09 14:35   TURBO_HPC_v2/sqcore_demo
+     9811  2026-03-09 14:35   TURBO_HPC_v2/Makefile
+    39314  2026-03-09 14:27   TURBO_HPC_v2/sqcore_turbo.c
+    25087  2026-03-09 14:29   TURBO_HPC_v2/sqasm_turbo.ll
+    20703  2026-03-09 14:31   TURBO_HPC_v2/turbo_hpc.sq
+---------                     -------
+   155776                     7 files
+
+=== PY_COMPILE ===
+PASS /mnt/data/TURBO_HPC_SHTENCO_OS_v3.py
+PASS /mnt/data/DEEPCOMPRESS_TOPO_v9.py
+PASS /mnt/data/virtual_qubit_hpc_v2.py
+PASS /mnt/data/virtual_qubit_hpc_v1.py
+PASS /mnt/data/turbo_cache_accelerator.py
