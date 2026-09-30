@@ -1,0 +1,46 @@
+┌──────────────────────────────────────────────────────┐
+│  TURBO HPC CLIENT v2.0  —  Evgeniy Koshtenko / 2026  │
+│  sqcore_turbo.ko Ring 0  +  Userspace Fallback       │
+└──────────────────────────────────────────────────────┘
+
+[SQ] /dev/sqcore_turbo not found → userspace fallback
+[DEMO 1] Fused QPIPE
+  input   : 'USDRUB=87.42 BID=87.420 ASK=87.450 SPREAD=0.030'
+  meas    : 0
+  entropy : -691.1893
+  signal  : -1.0000  (SELL)
+  latency : 41.322 µs
+
+[DEMO 2] VRAM set/get
+  (VRAM read requires Ring 0)
+
+[DEMO 3] xxHash64 fingerprint
+  data    : '{"bid":87.42,"ask":87.45,"spread":0.03}'
+  hash64  : 0x63afa266df5a2875
+
+[DEMO 4] Batch pipeline (8 symbols)
+  USDRUB=87.42    meas=0   ent=-684.079 sig=-1.000  SELL
+  EURUSD=1.082    meas=0   ent=-682.333 sig=-1.000  SELL
+  BTCUSD=95400    meas=0   ent=-683.265 sig=-1.000  SELL
+  EURRUB=94.8     meas=0   ent=-597.079 sig=-1.000  SELL
+  GBPUSD=1.270    meas=0   ent=-681.294 sig=-1.000  SELL
+  AUDUSD=0.644    meas=0   ent=-679.248 sig=-1.000  SELL
+  USDKZT=520.0    meas=0   ent=-681.494 sig=-1.000  SELL
+  USDJPY=149.5    meas=0   ent=-678.492 sig=-1.000  SELL
+  batch latency: 22.478 µs total  (2.810 µs/sym)
+
+
+══════════════════════════════════════════════════════
+  TURBO HPC CLIENT BENCHMARK  N=10000
+  Mode: Userspace fallback
+══════════════════════════════════════════════════════
+
+  [QPIPE fused]       3.109 µs/op  →   321660 pipe/sec
+    last: meas=64  entropy=-482.827  signal=-0.5000
+
+  [VSET]              0.060 µs/op
+  [xxHash64]          0.000 µs/op
+
+══════════════════════════════════════════════════════
+  avg latency:  3.088 µs  total_pipes: 10001
+
