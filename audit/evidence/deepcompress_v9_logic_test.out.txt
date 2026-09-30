@@ -1,0 +1,3 @@
+compress_ok True archive_size 712 same_process_decompress_ok True same_equal True
+dict_entries_after_compress 2 dict_file_exists False
+fresh_dictionary_decompress_ok False fresh_output_exists False fresh_equal False
