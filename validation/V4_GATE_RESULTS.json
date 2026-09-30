@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-30",
+  "gates": {
+    "BUILD_ALL": "PASS",
+    "LLVM_VERIFY": "PASS",
+    "ASAN": "PASS",
+    "UBSAN": "PASS",
+    "BATCH_EQ_SEQUENTIAL": "PASS",
+    "BATCH_DETERMINISTIC": "PASS",
+    "CACHE_DELETE": "PASS",
+    "CACHE_RESTART_RECOVERY": "PASS",
+    "NO_TAIL_LOSS": "PASS",
+    "FRESH_PROCESS_DECOMPRESS_1000": "PASS",
+    "SHA256_1000": "PASS",
+    "CORRUPTED_ARCHIVE_REJECT": "PASS",
+    "TOPO_V10_SELF_CONTAINED": "PASS",
+    "QUERY_RESULT_SET_256_VARIED": "PASS",
+    "EMPTY_QUERY_GUARD": "PASS",
+    "INDEX_BUILD_COST_INCLUDED": "PASS",
+    "FIVE_LOOKUP_STRUCTURES_CHECKSUM_EQUAL": "PASS",
+    "END_TO_END_MEASURED_NOT_MULTIPLIED": "PASS",
+    "KERNEL_RUNTIME_CURRENT_6_18": "NOT_TESTED_VERMAGIC_MISMATCH"
+  },
+  "lookup_median_ns": {
+    "flat": 9556.56,
+    "hash": 29.07,
+    "sorted": 127.39,
+    "btree": 127.19,
+    "hilbert": 178.01
+  },
+  "varied_query_e2e_median_speedup": {
+    "1": 0.931,
+    "10": 9.451,
+    "100": 97.498,
+    "1000": 899.129,
+    "2000": 1569.058,
+    "3000": 2116.714
+  },
+  "qpipe": {
+    "batch_1024_pipe_s": 247753.9,
+    "sequential_pipe_s": 73690.2,
+    "batch_vs_sequential_x": 3.362
+  }
+}
