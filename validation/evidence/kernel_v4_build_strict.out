@@ -1,0 +1,8 @@
+make: Entering directory '/usr/src/linux-headers-6.12.96+deb13-amd64'
+  CC [M]  /mnt/data/shtenco_v4_work/kernel_v4_build/sqcore_turbo_v4.o
+  MODPOST /mnt/data/shtenco_v4_work/kernel_v4_build/Module.symvers
+  CC [M]  /mnt/data/shtenco_v4_work/kernel_v4_build/sqcore_turbo_v4.mod.o
+  CC [M]  /mnt/data/shtenco_v4_work/kernel_v4_build/.module-common.o
+  LD [M]  /mnt/data/shtenco_v4_work/kernel_v4_build/sqcore_turbo_v4.ko
+  BTF [M] /mnt/data/shtenco_v4_work/kernel_v4_build/sqcore_turbo_v4.ko
+make: Leaving directory '/usr/src/linux-headers-6.12.96+deb13-amd64'
