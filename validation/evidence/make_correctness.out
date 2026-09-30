@@ -1,0 +1,29 @@
+python3 -m py_compile TURBO_HPC_SHTENCO_OS_v4.py turbo_cache_accelerator_v2.py DEEPCOMPRESS_TOPO_v10_V4.py
+python3 v4_correctness_harness.py
+[2m10:41:54[0m INFO [33m[JIT][0m Warming up Numba kernels...
+[2m10:41:59[0m INFO [92m[JIT][0m All kernels warmed up ✓
+[2m10:42:02[0m INFO   MmapTier '/tmp/shtenco_cache_v4_uacyrf5l/l2.bin': 2MB, 2047 slots x 1KB
+[2m10:42:02[0m INFO   MmapTier '/tmp/shtenco_cache_v4_uacyrf5l/l3.bin': 2MB, 2047 slots x 1KB
+[2m10:42:02[0m INFO TurboCache32GB STARTED  L1=512MB  L2=0GB  L3=0GB
+[2m10:42:02[0m INFO   MmapTier '/tmp/shtenco_cache_v4_uacyrf5l/l2.bin': 2MB, 2047 slots x 1KB
+[2m10:42:02[0m INFO   MmapTier '/tmp/shtenco_cache_v4_uacyrf5l/l3.bin': 2MB, 2047 slots x 1KB
+[2m10:42:02[0m INFO TurboCache32GB STARTED  L1=512MB  L2=0GB  L3=0GB
+[2m10:42:02[0m INFO   MmapTier '/tmp/shtenco_cache_v4_uacyrf5l/a2.bin': 2MB, 2047 slots x 1KB
+[2m10:42:02[0m INFO   MmapTier '/tmp/shtenco_cache_v4_uacyrf5l/a3.bin': 2MB, 2047 slots x 1KB
+[2m10:42:02[0m INFO TurboCache32GB STARTED  L1=512MB  L2=0GB  L3=0GB
+[2m10:42:02[0m INFO TurboAccelerator v2.0.0 READY  qt_cores=4  numba=YES
+=== V4 CORRECTNESS HARNESS ===
+BATCH_EQ_SEQ PASS entropy_max_abs 0.0 signal_max_abs 0.0
+BATCH_DETERMINISTIC PASS
+CACHE_THRESHOLD_KEY PASS 1 12
+FRESH_PROCESS_1000_PASS 1000
+SHA256_1000_CORPORA PASS
+CORRUPTED_ARCHIVE_REJECT PASS
+CACHE_RESTART_RECOVERY PASS
+CACHE_DELETE PASS
+NO_TAIL_LOSS PASS max_abs_delta 0.034541793167591095
+V4_CORRECTNESS_ALL=PASS
+python3 v10_parent_plain_test.py
+V10_FRESH_PROCESS True WEB_UI_OK False
+equal True
+TOPO_V10_PLAIN_FRESH_PROCESS=PASS
