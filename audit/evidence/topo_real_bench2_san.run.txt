@@ -1,0 +1,59 @@
+
+╔══════════════════════════════════════════════════════════════╗
+║   DEEPCOMPRESS TOPO v9.0 — REAL BENCHMARK v2               ║
+║   Evgeniy Koshtenko / Kostanay KZ / 2026                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+╔═══ L0: HILBERT DICT — SPATIAL LOCALITY (market stream) ═══╗
+║  Pattern         v8(ns)  v9(ns)  speedup  Why               ║
+║  ─────────────────────────────────────────────────────────  ║
+║  Random:           4.8     81.8     0.06x   random→random      ║
+║  Sequential grp:   6.3     20.8     0.30x   same symbol batch  ║
+║  Correlated jmp:   7.3     74.5     0.10x   ±nearby symbols    ║
+║  acc=1055587112                                                ║
+╚════════════════════════════════════════════════════════════╝
+
+╔═══ L1: TORUS HOT-SLOT RETENTION (cache < hot set) ════════╗
+║  V8 FIFO:    hot_evictions=476340  hits=241514  rate=24.2% ║
+║  V9 Torus:   hot_evictions=411122  hits=297252  rate=29.7% ║
+║  Hot eviction reduction: 1.2x                          ║
+║  Hit rate improvement:   1.2x  (+23%)                ║
+║  Lookup: scan=29.2ns  Hilbert-hash=74.6ns  speedup=0.4x  ║
+╚════════════════════════════════════════════════════════════╝
+
+╔═══ L2: SIMPLEX PREFETCH — CORRELATED ACCESS ═══════════════╗
+║  V8 LRU:     hits= 22509  misses=477491  rate=4.5%         ║
+║  V9 Simplex: hits=272733  misses=227267  rate=54.5%         ║
+║  Prefetch hits: 136250 (50.0% of all hits)                  ║
+║  Miss reduction: 2.1x  (+50% hit rate)                ║
+╚════════════════════════════════════════════════════════════╝
+
+╔═══ L3: HOMOLOGY STORAGE — READ SPEEDUP (REAL) ════════════╗
+║  Block 256B vs HomDesc 12B  (21x storage density)        ║
+║  Compress: 20.9 µs/block  =  12 MB/s throughput        ║
+║  HomDesc read: 9.6 ns/op                                ║
+║  Block scan:   529.4 ns/op                                ║
+║  Read speedup: 55.1x  (HomD in L1, block needs L2/L3)   ║
+║  Storage: 24MB → 1171KB  =  21x less memory            ║
+╚════════════════════════════════════════════════════════════╝
+
+╔═══ L4: RETRACT ARENA — FRAGMENTATION & ALLOC SPEED ═══════╗
+║  ALLOC (fresh):                                            ║
+║    arena: 1214.6 ns    malloc: 274.0 ns    speedup: 0.2x      ║
+║  REFILL after 50% free (fragmentation test):              ║
+║    arena: 1039.0 ns    malloc: 275.5 ns    speedup: 0.3x      ║
+║  Fragmentation: arena=0%  malloc=~20-30% (structural)     ║
+║  GC pause:      arena=0ms malloc=unpredictable            ║
+╚════════════════════════════════════════════════════════════╝
+
+╔═══ REF STREAM DELTA ENTROPY — LZMA GAIN ═══════════════════╗
+║  Raw ref stream entropy:                                   ║
+║    v8 (random):  6.498 bits/sym  ~324892 bytes LZMA        ║
+║    v9 (Hilbert): 5.144 bits/sym  ~257208 bytes LZMA        ║
+║    Gain:         1.26x                                    ║
+║  Delta-coded (LZMA favourite representation):             ║
+║    v8 delta: 7.999 bits  ~199976 bytes                     ║
+║    v9 delta: 0.108 bits  ~2705 bytes                     ║
+║    Delta gain:   74x  ← KEY RESULT                    ║
+╚════════════════════════════════════════════════════════════╝
+
