@@ -1,0 +1,6 @@
+NUMBA True
+QPIPE N=1 batch_pipe_s=22387.9 seq_pipe_s=69022.6 batch_vs_seq=0.324x equal=True
+QPIPE N=8 batch_pipe_s=137000.4 seq_pipe_s=90658.7 batch_vs_seq=1.511x equal=True
+QPIPE N=64 batch_pipe_s=214414.0 seq_pipe_s=59563.8 batch_vs_seq=3.600x equal=True
+QPIPE N=256 batch_pipe_s=246300.4 seq_pipe_s=73459.1 batch_vs_seq=3.353x equal=True
+QPIPE N=1024 batch_pipe_s=247753.9 seq_pipe_s=73690.2 batch_vs_seq=3.362x equal=True
