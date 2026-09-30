@@ -1,0 +1,96 @@
+===== TRIAL 1 =====
+SHTENCO V4 FAIR BENCHMARK
+BUILD sorted=3.393ms hilbert=12.280ms hash=1.814ms btree=3.820ms
+LOOKUP FLAT         10032.81 ns/query checksum=2879454740354
+LOOKUP HASH            29.09 ns/query checksum=2879454740354
+LOOKUP SORTED         179.36 ns/query checksum=2879454740354
+LOOKUP B-TREE         111.53 ns/query checksum=2879454740354
+LOOKUP HILBERT        178.01 ns/query checksum=2879454740354
+LOOKUP_RESULT_EQUAL=PASS
+QUERY_RESULT_SET_256=PASS total_hits=65296 checksum=87900732022177712
+EMPTY_QUERY_GUARD=PASS (speedup suppressed)
+AMORT_VARIED reps=1 build_ms=1.360373 raw_ms=1.267346 idx_query_ms=0.000616 e2e_idx_ms=1.360989 speedup=0.931x
+AMORT_VARIED reps=10 build_ms=1.360373 raw_ms=11.678271 idx_query_ms=0.003106 e2e_idx_ms=1.363479 speedup=8.565x
+AMORT_VARIED reps=100 build_ms=1.360373 raw_ms=124.582459 idx_query_ms=0.027724 e2e_idx_ms=1.388097 speedup=89.751x
+AMORT_VARIED reps=1000 build_ms=1.360373 raw_ms=1427.027465 idx_query_ms=0.226749 e2e_idx_ms=1.587122 speedup=899.129x
+AMORT_VARIED reps=2000 build_ms=1.360373 raw_ms=2849.939655 idx_query_ms=0.455965 e2e_idx_ms=1.816338 speedup=1569.058x
+AMORT_VARIED reps=3000 build_ms=1.360373 raw_ms=5044.514532 idx_query_ms=0.624444 e2e_idx_ms=1.984817 speedup=2541.551x
+END_TO_END_VARIED_SPEEDUP_3000Q=2541.551x sink=4196710154129621408
+INDEX_BUILD_COST_INCLUDED=PASS
+===== TRIAL 2 =====
+SHTENCO V4 FAIR BENCHMARK
+BUILD sorted=7.117ms hilbert=10.129ms hash=3.412ms btree=3.509ms
+LOOKUP FLAT          9556.56 ns/query checksum=2879454740354
+LOOKUP HASH            30.39 ns/query checksum=2879454740354
+LOOKUP SORTED         278.85 ns/query checksum=2879454740354
+LOOKUP B-TREE         128.15 ns/query checksum=2879454740354
+LOOKUP HILBERT        167.91 ns/query checksum=2879454740354
+LOOKUP_RESULT_EQUAL=PASS
+QUERY_RESULT_SET_256=PASS total_hits=65296 checksum=87900732022177712
+EMPTY_QUERY_GUARD=PASS (speedup suppressed)
+AMORT_VARIED reps=1 build_ms=1.362389 raw_ms=1.360250 idx_query_ms=0.000571 e2e_idx_ms=1.362960 speedup=0.998x
+AMORT_VARIED reps=10 build_ms=1.362389 raw_ms=14.617332 idx_query_ms=0.003038 e2e_idx_ms=1.365427 speedup=10.705x
+AMORT_VARIED reps=100 build_ms=1.362389 raw_ms=144.910037 idx_query_ms=0.025421 e2e_idx_ms=1.387810 speedup=104.416x
+AMORT_VARIED reps=1000 build_ms=1.362389 raw_ms=1369.334720 idx_query_ms=0.210480 e2e_idx_ms=1.572869 speedup=870.597x
+AMORT_VARIED reps=2000 build_ms=1.362389 raw_ms=2789.720010 idx_query_ms=0.432243 e2e_idx_ms=1.794632 speedup=1554.480x
+AMORT_VARIED reps=3000 build_ms=1.362389 raw_ms=4101.028366 idx_query_ms=0.815031 e2e_idx_ms=2.177420 speedup=1883.435x
+END_TO_END_VARIED_SPEEDUP_3000Q=1883.435x sink=4196710154129621408
+INDEX_BUILD_COST_INCLUDED=PASS
+===== TRIAL 3 =====
+SHTENCO V4 FAIR BENCHMARK
+BUILD sorted=4.814ms hilbert=9.329ms hash=3.020ms btree=4.544ms
+LOOKUP FLAT         15973.96 ns/query checksum=2879454740354
+LOOKUP HASH            29.07 ns/query checksum=2879454740354
+LOOKUP SORTED         123.14 ns/query checksum=2879454740354
+LOOKUP B-TREE         253.80 ns/query checksum=2879454740354
+LOOKUP HILBERT        180.42 ns/query checksum=2879454740354
+LOOKUP_RESULT_EQUAL=PASS
+QUERY_RESULT_SET_256=PASS total_hits=65296 checksum=87900732022177712
+EMPTY_QUERY_GUARD=PASS (speedup suppressed)
+AMORT_VARIED reps=1 build_ms=2.361644 raw_ms=1.111554 idx_query_ms=0.000501 e2e_idx_ms=2.362145 speedup=0.471x
+AMORT_VARIED reps=10 build_ms=2.361644 raw_ms=15.959765 idx_query_ms=0.003048 e2e_idx_ms=2.364692 speedup=6.749x
+AMORT_VARIED reps=100 build_ms=2.361644 raw_ms=140.317325 idx_query_ms=0.026879 e2e_idx_ms=2.388523 speedup=58.746x
+AMORT_VARIED reps=1000 build_ms=2.361644 raw_ms=1355.265143 idx_query_ms=0.210241 e2e_idx_ms=2.571885 speedup=526.954x
+AMORT_VARIED reps=2000 build_ms=2.361644 raw_ms=2725.945414 idx_query_ms=0.443827 e2e_idx_ms=2.805471 speedup=971.653x
+AMORT_VARIED reps=3000 build_ms=2.361644 raw_ms=4089.495930 idx_query_ms=0.707715 e2e_idx_ms=3.069359 speedup=1332.362x
+END_TO_END_VARIED_SPEEDUP_3000Q=1332.362x sink=4196710154129621408
+INDEX_BUILD_COST_INCLUDED=PASS
+===== TRIAL 4 =====
+===== TRIAL 4 =====
+SHTENCO V4 FAIR BENCHMARK
+BUILD sorted=3.812ms hilbert=7.884ms hash=1.358ms btree=3.805ms
+LOOKUP FLAT          9042.83 ns/query checksum=2879454740354
+LOOKUP HASH            28.38 ns/query checksum=2879454740354
+LOOKUP SORTED         127.39 ns/query checksum=2879454740354
+LOOKUP B-TREE         111.03 ns/query checksum=2879454740354
+LOOKUP HILBERT        172.77 ns/query checksum=2879454740354
+LOOKUP_RESULT_EQUAL=PASS
+QUERY_RESULT_SET_256=PASS total_hits=65296 checksum=87900732022177712
+EMPTY_QUERY_GUARD=PASS (speedup suppressed)
+AMORT_VARIED reps=1 build_ms=1.241858 raw_ms=1.129056 idx_query_ms=0.000572 e2e_idx_ms=1.242430 speedup=0.909x
+AMORT_VARIED reps=10 build_ms=1.241858 raw_ms=13.414618 idx_query_ms=0.003338 e2e_idx_ms=1.245196 speedup=10.773x
+AMORT_VARIED reps=100 build_ms=1.241858 raw_ms=139.135146 idx_query_ms=0.024492 e2e_idx_ms=1.266350 speedup=109.871x
+AMORT_VARIED reps=1000 build_ms=1.241858 raw_ms=1503.759211 idx_query_ms=0.234886 e2e_idx_ms=1.476744 speedup=1018.294x
+AMORT_VARIED reps=2000 build_ms=1.241858 raw_ms=2867.842718 idx_query_ms=0.460237 e2e_idx_ms=1.702095 speedup=1684.890x
+AMORT_VARIED reps=3000 build_ms=1.241858 raw_ms=4117.417925 idx_query_ms=0.703335 e2e_idx_ms=1.945193 speedup=2116.714x
+END_TO_END_VARIED_SPEEDUP_3000Q=2116.714x sink=4196710154129621408
+INDEX_BUILD_COST_INCLUDED=PASS
+===== TRIAL 5 =====
+SHTENCO V4 FAIR BENCHMARK
+BUILD sorted=4.651ms hilbert=7.317ms hash=3.097ms btree=2.881ms
+LOOKUP FLAT          8906.41 ns/query checksum=2879454740354
+LOOKUP HASH            28.91 ns/query checksum=2879454740354
+LOOKUP SORTED         112.84 ns/query checksum=2879454740354
+LOOKUP B-TREE         127.19 ns/query checksum=2879454740354
+LOOKUP HILBERT        204.46 ns/query checksum=2879454740354
+LOOKUP_RESULT_EQUAL=PASS
+QUERY_RESULT_SET_256=PASS total_hits=65296 checksum=87900732022177712
+EMPTY_QUERY_GUARD=PASS (speedup suppressed)
+AMORT_VARIED reps=1 build_ms=1.197526 raw_ms=1.180269 idx_query_ms=0.000402 e2e_idx_ms=1.197928 speedup=0.985x
+AMORT_VARIED reps=10 build_ms=1.197526 raw_ms=11.341128 idx_query_ms=0.002506 e2e_idx_ms=1.200032 speedup=9.451x
+AMORT_VARIED reps=100 build_ms=1.197526 raw_ms=119.284455 idx_query_ms=0.025925 e2e_idx_ms=1.223451 speedup=97.498x
+AMORT_VARIED reps=1000 build_ms=1.197526 raw_ms=1358.779051 idx_query_ms=0.231850 e2e_idx_ms=1.429376 speedup=950.610x
+AMORT_VARIED reps=2000 build_ms=1.197526 raw_ms=2792.274701 idx_query_ms=0.418445 e2e_idx_ms=1.615971 speedup=1727.924x
+AMORT_VARIED reps=3000 build_ms=1.197526 raw_ms=4232.551798 idx_query_ms=0.796810 e2e_idx_ms=1.994336 speedup=2122.286x
+END_TO_END_VARIED_SPEEDUP_3000Q=2122.286x sink=4196710154129621408
+INDEX_BUILD_COST_INCLUDED=PASS
