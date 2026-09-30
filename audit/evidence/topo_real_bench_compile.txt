@@ -1,0 +1,103 @@
+/mnt/data/topo_real_bench.c: In function 'bench_cache_locality':
+/mnt/data/topo_real_bench.c:17:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   17 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t); \
+      |                 ^
+/mnt/data/topo_real_bench.c:64:12: note: in expansion of macro 'KTIME'
+   64 |     u64 t0=KTIME();
+      |            ^~~~~
+/mnt/data/topo_real_bench.c:17:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   17 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t); \
+      |                 ^
+/mnt/data/topo_real_bench.c:66:12: note: in expansion of macro 'KTIME'
+   66 |     u64 t1=KTIME();
+      |            ^~~~~
+/mnt/data/topo_real_bench.c:17:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   17 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t); \
+      |                 ^
+/mnt/data/topo_real_bench.c:69:12: note: in expansion of macro 'KTIME'
+   69 |     u64 t2=KTIME();
+      |            ^~~~~
+/mnt/data/topo_real_bench.c:17:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   17 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t); \
+      |                 ^
+/mnt/data/topo_real_bench.c:71:12: note: in expansion of macro 'KTIME'
+   71 |     u64 t3=KTIME();
+      |            ^~~~~
+/mnt/data/topo_real_bench.c: In function 'bench_torus_ring':
+/mnt/data/topo_real_bench.c:17:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   17 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t); \
+      |                 ^
+/mnt/data/topo_real_bench.c:94:12: note: in expansion of macro 'KTIME'
+   94 |     u64 t0=KTIME();
+      |            ^~~~~
+/mnt/data/topo_real_bench.c:17:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   17 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t); \
+      |                 ^
+/mnt/data/topo_real_bench.c:101:12: note: in expansion of macro 'KTIME'
+  101 |     u64 t1=KTIME();
+      |            ^~~~~
+/mnt/data/topo_real_bench.c:17:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   17 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t); \
+      |                 ^
+/mnt/data/topo_real_bench.c:105:12: note: in expansion of macro 'KTIME'
+  105 |     u64 t2=KTIME();
+      |            ^~~~~
+/mnt/data/topo_real_bench.c:17:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   17 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t); \
+      |                 ^
+/mnt/data/topo_real_bench.c:113:12: note: in expansion of macro 'KTIME'
+  113 |     u64 t3=KTIME();
+      |            ^~~~~
+/mnt/data/topo_real_bench.c:113:9: warning: unused variable 't3' [-Wunused-variable]
+  113 |     u64 t3=KTIME();
+      |         ^~
+/mnt/data/topo_real_bench.c:105:9: warning: unused variable 't2' [-Wunused-variable]
+  105 |     u64 t2=KTIME();
+      |         ^~
+/mnt/data/topo_real_bench.c:101:9: warning: unused variable 't1' [-Wunused-variable]
+  101 |     u64 t1=KTIME();
+      |         ^~
+/mnt/data/topo_real_bench.c:94:9: warning: unused variable 't0' [-Wunused-variable]
+   94 |     u64 t0=KTIME();
+      |         ^~
+/mnt/data/topo_real_bench.c: In function 'bench_homology_density':
+/mnt/data/topo_real_bench.c:17:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   17 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t); \
+      |                 ^
+/mnt/data/topo_real_bench.c:168:12: note: in expansion of macro 'KTIME'
+  168 |     u64 t0=KTIME();
+      |            ^~~~~
+/mnt/data/topo_real_bench.c:17:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   17 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t); \
+      |                 ^
+/mnt/data/topo_real_bench.c:181:12: note: in expansion of macro 'KTIME'
+  181 |     u64 t1=KTIME();
+      |            ^~~~~
+/mnt/data/topo_real_bench.c:169:17: warning: variable 'desc' set but not used [-Wunused-but-set-variable]
+  169 |     volatile u8 desc[16];
+      |                 ^~~~
+/mnt/data/topo_real_bench.c: In function 'bench_retract_arena':
+/mnt/data/topo_real_bench.c:17:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   17 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t); \
+      |                 ^
+/mnt/data/topo_real_bench.c:202:12: note: in expansion of macro 'KTIME'
+  202 |     u64 t0=KTIME();
+      |            ^~~~~
+/mnt/data/topo_real_bench.c:17:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   17 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t); \
+      |                 ^
+/mnt/data/topo_real_bench.c:216:12: note: in expansion of macro 'KTIME'
+  216 |     u64 t1=KTIME();
+      |            ^~~~~
+/mnt/data/topo_real_bench.c:17:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   17 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t); \
+      |                 ^
+/mnt/data/topo_real_bench.c:219:12: note: in expansion of macro 'KTIME'
+  219 |     u64 t2=KTIME();
+      |            ^~~~~
+/mnt/data/topo_real_bench.c:17:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   17 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t); \
+      |                 ^
+/mnt/data/topo_real_bench.c:221:12: note: in expansion of macro 'KTIME'
+  221 |     u64 t3=KTIME();
+      |            ^~~~~
