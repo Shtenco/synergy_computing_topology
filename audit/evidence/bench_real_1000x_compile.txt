@@ -1,0 +1,81 @@
+/mnt/data/bench_real_1000x.c: In function 'bench_main':
+/mnt/data/bench_real_1000x.c:19:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   19 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/bench_real_1000x.c:76:17: note: in expansion of macro 'KTIME'
+   76 |     uint64_t tb=KTIME();
+      |                 ^~~~~
+/mnt/data/bench_real_1000x.c:19:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   19 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/bench_real_1000x.c:78:30: note: in expansion of macro 'KTIME'
+   78 |     double build_ms=(double)(KTIME()-tb)/1e6;
+      |                              ^~~~~
+/mnt/data/bench_real_1000x.c:19:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   19 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/bench_real_1000x.c:106:17: note: in expansion of macro 'KTIME'
+  106 |     uint64_t t0=KTIME();
+      |                 ^~~~~
+/mnt/data/bench_real_1000x.c:19:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   19 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/bench_real_1000x.c:129:29: note: in expansion of macro 'KTIME'
+  129 |     double base_ns=(double)(KTIME()-t0)/REPS/N_MAIN;
+      |                             ^~~~~
+/mnt/data/bench_real_1000x.c:19:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   19 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/bench_real_1000x.c:135:17: note: in expansion of macro 'KTIME'
+  135 |     uint64_t t1=KTIME();
+      |                 ^~~~~
+/mnt/data/bench_real_1000x.c:19:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   19 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/bench_real_1000x.c:150:27: note: in expansion of macro 'KTIME'
+  150 |     double v9_ns=(double)(KTIME()-t1)/REPS/N_MAIN;
+      |                           ^~~~~
+/mnt/data/bench_real_1000x.c:19:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   19 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/bench_real_1000x.c:163:17: note: in expansion of macro 'KTIME'
+  163 |     uint64_t t2=KTIME();
+      |                 ^~~~~
+/mnt/data/bench_real_1000x.c:19:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   19 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/bench_real_1000x.c:177:34: note: in expansion of macro 'KTIME'
+  177 |     double hil_total_ns=(double)(KTIME()-t2)/REPS;
+      |                                  ^~~~~
+/mnt/data/bench_real_1000x.c: In function 'bench_1000x_real':
+/mnt/data/bench_real_1000x.c:256:56: warning: operand of '?:' changes signedness from 'int' to 'uint32_t' {aka 'unsigned int'} due to unsignedness of other operand [-Wsign-compare]
+  256 |     uint32_t win_end=(target_dom<255)?bk[target_dom+1]:N4;
+      |                                                        ^~
+/mnt/data/bench_real_1000x.c:19:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   19 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/bench_real_1000x.c:265:17: note: in expansion of macro 'KTIME'
+  265 |     uint64_t t0=KTIME();
+      |                 ^~~~~
+/mnt/data/bench_real_1000x.c:19:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   19 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/bench_real_1000x.c:277:29: note: in expansion of macro 'KTIME'
+  277 |     double base_ns=(double)(KTIME()-t0)/REPS/N4;
+      |                             ^~~~~
+/mnt/data/bench_real_1000x.c:19:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   19 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/bench_real_1000x.c:281:17: note: in expansion of macro 'KTIME'
+  281 |     uint64_t t1=KTIME();
+      |                 ^~~~~
+/mnt/data/bench_real_1000x.c:19:17: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   19 | #define KTIME() ({ struct timespec _t; clock_gettime(CLOCK_MONOTONIC,&_t);\
+      |                 ^
+/mnt/data/bench_real_1000x.c:289:33: note: in expansion of macro 'KTIME'
+  289 |     double v9_total_ns=(double)(KTIME()-t1)/REPS;
+      |                                 ^~~~~
+/mnt/data/bench_real_1000x.c: At top level:
+/mnt/data/bench_real_1000x.c:22:17: warning: 'hilbert_d' defined but not used [-Wunused-function]
+   22 | static uint32_t hilbert_d(uint32_t x,uint32_t y){
+      |                 ^~~~~~~~~
