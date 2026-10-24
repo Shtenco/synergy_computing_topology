@@ -1,3 +1,11 @@
+<!-- SCIENTIFIC-V5-2026:START -->
+<img src="assets/readme/scientific-architecture-v5.svg" width="100%" alt="Computing Topology V4 scientific architecture"/>
+
+**[Научно-техническое досье V5 — постановка, математика, provenance, риски и критерии проверки](docs/SCIENTIFIC_DOSSIER_V5_2026.md)**  
+**Статус документационного аудита:** VALIDATION EVIDENCE PRESENT. Старый README сохранён ниже без удаления исторических материалов.
+
+<!-- SCIENTIFIC-V5-2026:END -->
+
 # Synergy Computing Topology
 
 Canonical repository for the SHTENCO / Synergy Computing Topology experimental computing stack.
